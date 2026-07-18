@@ -1,0 +1,31 @@
+# --- Core ---
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+python-dotenv>=1.0
+beautifulsoup4>=4.12   # used by the existing legacy tracker (MAMCOS scraping)
+
+# --- Modeling ---
+scikit-learn>=1.4
+xgboost>=2.0
+lightgbm>=4.3
+prophet>=1.1            # optional: only used once you have 60+ days of history
+tensorflow>=2.16         # optional: only used once you have 180+ days of history (LSTM/GRU)
+joblib>=1.3
+
+# --- News / RSS ---
+feedparser>=6.0          # free Google News RSS fallback (no API key needed)
+
+# --- API server ---
+fastapi>=0.111
+uvicorn[standard]>=0.29
+
+# --- Dashboard ---
+streamlit>=1.35
+plotly>=5.22
+
+# --- PDF report generation ---
+reportlab>=4.2
+
+# --- Testing ---
+pytest>=8.2
